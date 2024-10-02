@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Section from "../components/Section.astro";
 import { Image } from "astro:assets";
 import farver from "../assets/images/01-farver.png";
 import motiver from "../assets/images/02-motiver.png";
@@ -16,139 +17,110 @@ import layout4 from "../assets/images/04-layout4.png";
   ogtitle="Plakatvæg info"
   ogdescription="En guide til at lave en optimal plakatvæg på den bedste og hurtigste måde med det flotteste resultat!"
 >
-  <article class="grid mx-auto container gap-8 pt-8 prose">
-    <h1>Fire gode steps til at sammensætte en plakatvæg</h1>
+  <article class="flex flex-col container gap-8 prose items-center">
+    <section id="hero">
+      <div id="hero-text" class="bg-white">
+        <h1 class="m-3 text-center">En kort historie om surf rock</h1>
+      </div>
+    </section>
 
-    <h2>1) Overvej hvordan farverne passer sammen</h2>
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        Surfmusik opstod i Californien i tidlige 1960'ere og blev hurtigt en
+        vigtig del af ungdomskulturen.
+      </p>
+    </section>
 
-    <p>
-      Overvej hvilket udtryk du gerne vil udtrykke med din plakatvæg. Skal det
-      være ren sort/hvid plakat væg? Eller en blanding af sort/hvid plakater og
-      få plakater med farver? Det kan også være en samling af plakater i samme
-      farvetoner eller en vild farvelade med mange farver.
-    </p>
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        Genren kombinerede elementer af rock and roll, instrumentalmusik og en
+        unik, bølgelignende lyd, der fangede essensen af surfinglivet.
+      </p>
+    </section>
 
-    <ul>
-      <li>Vær bevidst om hvilke farver du sammensætter til plakatvæggen.</li>
-      <li>
-        Når man beslutter sig for farvertoner til plakatvæggen kan det også være
-        kan det være en god ide at kigge på de omgivelser vægen er en sammenhæng
-        med.
-      </li>
-    </ul>
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        Bands som The Beach Boys og Dick Dale var blandt de mest fremtrædende
+        navne, hvor Dale, ofte kaldt "King of the Surf Guitar", brugte
+        tremolo-teknikker og hurtige riff, der imiterede lyden af bølger.
+      </p>
+    </section>
 
-    <Image
-      src={farver}
-      alt="Billede af væg med tre billeder i hver sin gråtone"
-    />
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        Musikken blev tæt knyttet til surfkulturen, og teksterne handlede ofte
+        om strandliv, biler og ungdommelig frihed.
+      </p>
+    </section>
 
-    <hr />
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        The Beach Boys’ harmonier og melodiske tilgang populariserede
+        surfmusikken og gjorde den til en global sensation. Deres album "Pet
+        Sounds" fra 1966 anses nu som et af de mest indflydelsesrige i
+        rockhistorien.
+      </p>
+    </section>
 
-    <h2>2) Hvilke motiver skal hænges på væggen?</h2>
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        I takt med at 60’erne skred frem, mistede surfmusikken noget af sin
+        popularitet, men den efterlod en varig indflydelse på mange genrer,
+        herunder punk og rock. I dag lever surfmusikken videre i forskellige
+        former og har inspireret mange moderne musikere, der fortsætter med at
+        fange den nostalgiske ånd af bølgerne og den kaliforniske livsstil.
+        Surfmusikken står derfor som et tidløst symbol på ungdommeligt oprør og
+        frihed.
+      </p>
+    </section>
 
-    <p>
-      Ligesom farverne er motiverne på plakaterne også med til at skabe et
-      bestemt udtryk. Skal de være ensartede eller skal der være kontraster når
-      øjet ser væggen? Og kan nogle motiver være med til at skabe en
-      overraskelse når man betragter væggen.
-    </p>
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        I punkrocken inkorporerede bands som The Ramones og The Dickies
+        surfmusikens energi og melodiske elementer i deres lyd...
+      </p>
+    </section>
 
-    <ul>
-      <li>
-        Hvis man har mange forskellige motiver kan det være en god ide at
-        gruppere, så nogle af billederne taler sammen.
-      </li>
-      <li>
-        Det kan også være en god ide at sammensætte motiver med stor kontrast,
-        da de på den måde kan fremhæve hinanden.
-      </li>
-    </ul>
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        The Cure og The B-52's brugte surflyde i nogle af deres sange, hvilket
+        tilføjede en unik atmosfære til alternativ rock...
+      </p>
+    </section>
 
-    <Image
-      src={motiver}
-      alt="Billede af væg med tre billeder med forskellige motiver"
-    />
-
-    <hr />
-
-    <h2>3) Motiver i forskellige størrelser og formater</h2>
-
-    <p>
-      Overvej hvilken størrelse billeder du skal bruge til din væg. Er der mange
-      forskellige formater der skal passes ind i layoutet eller vil du have
-      præcis de samme to formater?
-    </p>
-
-    <p>
-      Flere formater og både bred og højformat skaber ofte et dynamisk udtryk,
-      der kan være spændende at gå på opdagelse i. Udfordringen med denne slags
-      layout er at det ofte bliver meget rodet, og derfor kan det være en fordel
-      at følge nogle principper der kan hjælpe med at skabe ro. Det kan også
-      være indbydende for øjet bare at gentage den samme størrelse, - på den
-      måde kan motivet også komme mere til sin ret.
-    </p>
-    <ul>
-      <li>
-        Udvælg formater til din billedvæg. både plakater i forskellige
-        størrelser, høj- og bred-format
-      </li>
-      <li>
-        Vælger man at gentage det samme format kan man eks. bryde layoutet ved
-        at tage et eller to billeder ud.
-      </li>
-    </ul>
-    <Image
-      src={strl}
-      alt="Billede af væg med mange billeder i forskellige størrelser og farver"
-    />
-
-    <hr />
-    <h2>4) Layout af en spændende billedvæg</h2>
-
-    <p>
-      At layoute en billedvæg med flere billeder er en svær øvelse. Er der er
-      mange eller få billeder? Hvilke farver, hvilke motiver og hvilke
-      størrelser skal sættes sammen som en enhed?
-    </p>
-
-    <p>
-      Man kan bruge forskellige metoder til at skabe et fedt udtryk. Her er
-      nogle du kan overveje at bruge hvis du har mange billeder. Hvis du har
-      billederne i fysisk form, så start med at lave layoutet på gulvet, stil
-      dig op på en stol og tag et billede når du er tilfreds med første udkast.
-      Lav denne øvelser et par gange før du begynder at hænge dem op på væggen.
-    </p>
-
-    <ul>
-      <li>Anvend linjer der flugter på forskellige måder.</li>
-      <li>
-        Arbejd med at have den samme afstand mellem rammerne. Kan man have den
-        sammen afstand giver det ro.
-      </li>
-      <li>
-        Man kan også arbejde med at placere billederne lidt abstrakt på væggen.
-        Det kan skabe et mere livligt og overraskende look.
-      </li>
-    </ul>
-
-    <div class="grid grid-cols-2 gap-4">
-      <Image
-        src={layout1}
-        alt="Billede af væg med mange billeder der flugter fra toppen"
-      />
-      <Image
-        src={layout2}
-        alt="Billede af væg med mange billeder der flugter fra bunden"
-      />
-      <Image
-        src={layout3}
-        alt="Billede af væg med mange billeder der er placeret udfra et midtpunkt"
-      />
-      <Image
-        src={layout4}
-        alt="Billede af væg med mange billeder der er placeret udfra en personligt defineret form"
-      />
-    </div>
-    <hr />
+    <section class="border-red-400 border-2 max-w-screen-md">
+      <img src="/src/assets/images/02-motiver.png" alt="stand in billede" />
+      <p>
+        ... og i grungens verden blev Nirvana og Pearl Jam påvirket af
+        surfmusikens guitarlyde, selvom de bevægede sig i en mere mørk retning.
+      </p>
+    </section>
   </article>
 </MainLayout>
+
+<style>
+  #hero {
+    background-image: url("src/assets/images/hero.png");
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  article {
+    max-width: 100%;
+  }
+</style>
